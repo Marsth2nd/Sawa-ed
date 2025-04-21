@@ -1,0 +1,212 @@
+.logo{
+    height: 200px;
+    width:190px;
+}
+/* Sidebar */
+#sidebar {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Overlay (Background) */
+#overlay {
+    transition: opacity 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5);  /* Dark background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+/* Default hidden state for overlay */
+#overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Sidebar initially hidden (off screen) */
+#sidebar.translate-x-full {
+    transform: translateX(100%);
+    
+}
+
+/* Sidebar visible state (on screen) */
+#sidebar.translate-x-0 {
+    transform: translateX(0);
+}
+a{
+    text-decoration: none;
+    color: #0d1b2a;
+    text-decoration: none;
+    transition: 0.4s ease;
+    
+}
+a:hover{
+    color: #f4a261;
+
+}
+#logo-anchor{
+    color: #f4a261;
+}
+#logo-anchor:hover{
+    color: #fdf6ec;
+}
+#chat-box{
+    height: 295px;
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#chathead{
+color: #0d1b2a;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+#chatcardd{
+    height:496px;
+    width:500px;
+}
+@keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-down {
+    animation: fadeInDown 0.5s ease-out;
+  }
+  #sidebar::-webkit-scrollbar {
+    width: 6px;
+  }
+  #sidebar::-webkit-scrollbar-thumb {
+    background-color: #f4a261;
+    border-radius: 10px;
+  }
+  #delete-service-1{
+    z-index: 3;
+  }
+  .speech-bubble {
+    position: relative;
+    padding: 1rem;
+    border-radius: 0.8em;
+    max-width: 100%;
+    font-size: 0.875rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .bubble-sent {
+    background-color: #ffe5d9;
+    color: #264653;
+    border-bottom-right-radius: 0;
+    align-self: flex-end;
+  }
+  
+  .bubble-sent::after {
+    content: '';
+    position: absolute;
+    left: 70%;
+    bottom: -10px;
+    transform: translateX(-70%);
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #ffe5d9;
+    border-right: 0;
+    margin-left: -13px;
+    margin-bottom: -26px;
+  }
+  
+  .bubble-received {
+    background-color: #dbeafe;
+    color: #1e3a8a;
+    border-bottom-right-radius: 0;
+    align-self: flex-end;
+  }
+  
+  .bubble-received::after {
+    content: '';
+    position: absolute;
+    left: 30%;
+    bottom: -10px;
+    transform: translateX(-30%);
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #dbeafe;
+    border-left: 0;
+    margin-left: -13px;
+    margin-bottom: -26px;
+  }
+  
+.cta-container {
+  background-image: url('https://img.freepik.com/free-vector/digital-technology-background-with-blue-orange-light-effect_1017-27423.jpg?semt=ais_hybrid&w=740');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border-radius: 20px;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: backgroundMove 20s linear infinite;
+}
+
+.cta-content {
+  background-color: rgba(255, 255, 255, 0.7); /* لتخفيف اللون */
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  color: #0d1b2a;
+  margin-bottom: 10px;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-button {
+  background-color: #0d1b2a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  color: white;
+  background-color: #f4a261;
+  transform: scale(1.05);
+}
+
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
